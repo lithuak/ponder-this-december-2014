@@ -21,6 +21,7 @@ pair of sums.
 After staring at several examples for some minutes I more or less 
 quickly found this interesting pattern:
 
+```
 1 0 
 1 0
 0 1
@@ -28,22 +29,27 @@ quickly found this interesting pattern:
 1 0 0
 1 0 0 
 0 1 1
+```
 
 The first matrice belongs to the set of exactly 3 matrices that produces
 (1, 1, 2), (2, 1) sums. The second one, made from the first by duplicating second
 column belongs to the set with 5 solutions. I checked it out with my script and
 at came out that we can build the matrices like this:
 
+```
 1 0 0 ... 0
 1 0 0 ... 0
 0 1 1 ... 1
+```
 
 to repesent any odd number.
 
 The matrice for "29" will contain 15 columns, have sums like this:
 
+```
 1 1 14
 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+```
 
 and have 3 * 15 = 45 < 50 elements. So we win :) ■
 
